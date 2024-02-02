@@ -1,0 +1,13 @@
+https://cloud.tencent.com/developer/article/1480510
+一、Attention机制原理理解
+Attention机制通俗的说，对于某个时刻的输出y，它在输入x上各个部分上的注意力，这里的注意力也就是权重，即输入x的各个部分对某时刻输入y贡献的权重，在此基础上我们先来简单理解一下Transformer模型中提到的self-attention和context-attention
+(1) Self-attention：输入序列即是输出序列，即计算自身的attention，计算序列对其本身的attention权重
+(2) Context-attention：即是encoder-decoderattention，如在机器翻译模型中即计算encoder序列中的每个词对decoder序列各个词的attention权重
+
+这里attention的计算方式可以有很多种，点乘形式、加权点乘形式或求和形式
+
+未知名词
+softmax ： 用于多分类的激活函数
+双向RNA结构： 双向RNN是由两个沿相反时间线的单向RNN叠加而成
+sigmod： 见qq图
+align：使一致
